@@ -92,5 +92,5 @@ fitdpm_cvx=
 
 
 ###############################
-The estimation using dpm.R and dpmcvx.R are the same.
+The tuning parameter and estimation using dpm.R and dpmcvx.R are the same.
 ###############################
