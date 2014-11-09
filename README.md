@@ -1,8 +1,7 @@
 #### dpm_modify ####
 ################################################################
-######README, 11.08.2014
 ######Direct estimation of differential networks Using CVX package
-######Jin Jin
+######Jin Jin    11/08/14
 ################################################################
 
 #####Description
