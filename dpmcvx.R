@@ -91,17 +91,17 @@ folds=5;
     gamma <- 1/rho;
     lambda <- lambda - shrink*prec;
     nlambda = length(lambda);
-
+    ## ===============================================================================
+    ## Calling Matlab and use CVX package to solve constrained optimization problem
+    ## ===============================================================================
   write.matrix(format(S, scientific=FALSE), 
                file = paste("/home/merganser/jinjin/Jindpm/CVX", "S.csv", sep="/"), sep=",")
   write.matrix(format(e, scientific=FALSE), 
                file = paste("/home/merganser/jinjin/Jindpm/CVX", "e.csv", sep="/"), sep=",")
   write.matrix(format(lambda, scientific=FALSE), 
                file = paste("/home/merganser/jinjin/Jindpm/CVX", "lambda.csv", sep="/"), sep=",")
-
 setwd("/home/merganser/jinjin/Jindpm/CVX")
 
-#make a vector where each element is a line of MATLAB code
 #matlab code reads in our variable x, creates two variables y and z, 
 #and write z in a csv file
 matlab.lines <- c(
@@ -122,12 +122,10 @@ matlab.lines <- c(
 "save /home/merganser/jinjin/Jindpm/CVX/beta.mat beta"
 )
 
-
-
 #create a MATLAB script containing all the commands in matlab.lines
 writeLines(matlab.lines, con="/home/merganser/jinjin/Jindpm/CVX/myscript.m")
  
-#run our MATLAB script
+#run MATLAB script
 system("matlab -nodisplay -r \"run('/home/merganser/jinjin/Jindpm/CVX/myscript.m'); exit\"")
 
 setwd("/home/merganser/jinjin/Jindpm/R.matlab_3.1.1/R.matlab")
