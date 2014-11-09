@@ -1,5 +1,5 @@
 ## **************************************************************
-## 1. generate the same data X1 and X0 and compare the results using dpm.R and dpmcvx.R
+## 1. generate the same data X1 and X0 and compare the estimation using dpm.R and dpmcvx.R
 ## **************************************************************
 n0 <- 5;
 n1 <- 5;
