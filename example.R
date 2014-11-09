@@ -18,4 +18,4 @@ X1<- mvrnorm(n1,rep(0,p),solve(O1));
 X0<- mvrnorm(n0,rep(0,p),solve(O0));
 
 fitcvx<- dpmcvx(X1,X0,nlambda=10,tuning="aic");
-fit.cv <- dpmcvx(X1.t,X0.t,nlambda=10,tuning="cv",folds=3);
+fit.cv <- dpmcvx(X1,X0,nlambda=10,tuning="cv",folds=3);
