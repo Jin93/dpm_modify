@@ -92,5 +92,5 @@ fitdpmcvx.R=
 
 
 ###############################
-It is easy to see that the results using dpm.R and dpmcvx.R are the same.
+It is clear that the results using dpm.R and dpmcvx.R are the same.
 ###############################
