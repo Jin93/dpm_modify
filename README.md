@@ -18,4 +18,4 @@ dpmcvx.R
 - R function for estimating differential networks
 
 example.R
-- example usage 
+- example usage  
