@@ -15,3 +15,6 @@ dpmcvx.R
 
 example.R
 - example usage  
+
+simulation_result
+- to compare the result of two methods (dpm.R and dpmcvx.R) 
