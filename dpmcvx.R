@@ -242,3 +242,4 @@ dpm.ic <- function(S1,S0,ret,n,penalty)
     return(apply(ic,1,which.min));
 }
 
+##### function dpm.cv and dpm.ic are the same as the original ones #####
