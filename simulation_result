@@ -42,7 +42,7 @@ write.matrix(format(fit.aic$lambda, scientific=FALSE),
                file = paste("/home/merganser/jinjin/Jindpm/CVX", "estimation.csv", sep="/"), sep=",")
                
 Result of dpm.R (saved in estimation.csv)
-fitdpm.R=
+fitdpm=
 1.35464290
 0.94687214
 0.66171161
@@ -75,7 +75,7 @@ write.matrix(format(fitcvx$lambda, scientific=FALSE),
                file = paste("/home/merganser/jinjin/Jindpm/CVX", "estimationcvx.csv", sep="/"), sep=",")
 
 Result of dpmcvx.R (saved in estimation.csv)
-fitdpmcvx.R=
+fitdpm_cvx=
 1.35464290
 0.94687214
 0.66171161
@@ -92,5 +92,5 @@ fitdpmcvx.R=
 
 
 ###############################
-It is clear that the results using dpm.R and dpmcvx.R are the same.
+The results using dpm.R and dpmcvx.R are the same.
 ###############################
